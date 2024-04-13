@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- section 1 -->
+    <section id="start">
+        <div class="container my-5 animate__animated animate__backInDown">
+            <div class="py-2 d-flex justify-content-center align-items-center">
+                <div class="w-75 mx-auto my-5 bg-white  ">
+                    <h1 class="text-center mt-4">START QUIZ</h1>
+                    <div class="form-group p-3">
+                        <label for="catagory">catagory</label>
+
+                        <select name="catagory" id="catagory" class="form-control my-2">
+                            <option value="23">History</option>
+                            <option value="19">Science: Mathematics</option>
+                            <option value="21">Sports</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="17">Science & Nature</option>
+                            <option value="27">Animals</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="25">Art</option>
+                            <option value="11">Entertainment: Film</option>
+                            <option value="22">Geography</option>
+
+                        </select>
+                    </div>
+                    <div class="form-groub p-2">
+                        <label for="">Diffuculty</label>
+                        <div class="form-check">
+                            <label for="">
+                                <input type="radio" class="form-check-input" name="difucult" id="easy" value="easy"
+                                   >
+
+
+                                Easy</label>
+                        </div>
+                    </div>
+                    <div class="form-groub p-2">
+                        <label for="form-check">
+                            <input type="radio" name="difucult" class="form-check-input" id="meddiem" value="medium" >
+                            medium
+                        </label>
+                    </div>
+
+                    <div class="form-groub p-2">
+                        <label for="form-check">
+                            <input type="radio" name="difucult" class="form-check-input" id="difucality"value="Hard" >
+                           Hard
+                        </label>
+                    </div>
+                    <div class="form-groub">
+                        <input type="number" id="numberofquistion" class="form-control"
+                            placeholder="number of quistion">
+                    </div>
+                    <div class="alert alert-danger mt-3 " id="alert1">
+                        enter number of quistion
+
+                    </div>
+                    <button id="startbtn" class="btn btn-outline-warning float-end my-3 mx-2 ">Start</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- end section 1 -->
+
+    <!--s section2 -->
+    <section id="quiz" class="">
+        <div class="container animate__animated animate__backInDown">
+            <div class="p-4 d-flex justify-content-center align-items-center">
+                <div class="bg-white w-75 mx-auto my-5 mb-5 py-3">
+                    <h1 class="text-center">Quiz</h1>
+                    <span class="float-end rounded-pill p-2 bg-warning">
+                        <span id="currentQuition"></span>of
+                        <span id="totalNmberOfQuistion">Quistion</span>
+                    </span>
+                    <span id="incorrect" class="btn btn-danger float-start ">incorrect</span>
+                    <span id="correct" class="btn btn-success float-start ">correct</span>
+                    <div class="clear-fix"></div>
+
+                    <div class="p-4">
+                        <h5 class="d-inline">Q:</h5>
+                        <h5 class="d-inline" id="quistion"></h5>
+                        <div id="rowanswer" class="py-2"></div>
+                        <div id="alert" class="alert alert-danger mt-3 ">please chose your answer</div>
+                        <button class="btn btn-outline-warning float-end mt-2" id="next">Submit</button>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--e section2 -->
+
+    <!-- finish -->
+    <section id="finish" class="">
+        <div class="container animate__animated animate__backInDown p-5">
+            <div class="py-4 d-flex justify-content-center align-items-center">
+                <div class="w-75 mx-auto bg-white my-5 mb-5 py-3">
+                <h1 class="text-center">Finish</h1>
+                <div class="p-4">
+                    <h5 class="text-center">score</h5>
+                    <h5 class="text-center" id="score"></h5>
+                    <button class="btn btn-outline-warning rounded-pill float-end " id="btnTry">Try agin?</button>
+                </div>
+
+            </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+
+
+</html>

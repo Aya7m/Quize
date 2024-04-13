@@ -1,0 +1,12 @@
+body{
+    
+    background-image: url(../imigs/metolite-paper-copy-space.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.clear-fix{
+    clear: both;
+}
+#quiz,#finish,#alert1,#alert,#correct,#incorrect{
+    display: none;
+}
